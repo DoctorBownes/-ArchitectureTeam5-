@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public bool paused;
+    public GameObject LetterUI;
     public GameObject UI;
     public GameObject PauseMenu;
     private void Start()
@@ -27,7 +28,12 @@ public class MainMenu : MonoBehaviour
     }
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Game" && Input.GetKeyDown(KeyCode.Escape))
+        if (LetterUI.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        {
+            LetterUI.SetActive(false);
+            UI.SetActive(true);
+        }
+        else if (SceneManager.GetActiveScene().name == "Game" && Input.GetKeyDown(KeyCode.Escape))
         {
             if (paused)
             {

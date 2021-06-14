@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerRB : MonoBehaviour
 {
     public float WalkSpeed = 5.0f;
     public float RotationSpeed = 1.0f;
     public float JumpHeight = 1.0f;
+    public int counter = 0;
 
     private Transform _groundChecker;
     public float GroundDistance = 0.15f;
@@ -17,6 +19,8 @@ public class PlayerRB : MonoBehaviour
     private Vector3 _rotation;
     private GameObject myCamera;
     private GameObject myMenu;
+    private GameObject Gate;
+    public GameObject[] ItemsFind;
     public bool _isGrounded;
 
     // Start is called before the first frame update
@@ -29,6 +33,11 @@ public class PlayerRB : MonoBehaviour
         _groundChecker = transform.Find("GroundChecker");
         myCamera = GameObject.Find("MainCamera");
         myMenu = GameObject.Find("Canvas");
+        Gate = GameObject.Find("Gate");
+/*        for (int i = 0; i < ItemsFind.Length; i++)
+        {
+            ItemsFind[i] = GameObject.Find("Collected");
+        }*/
     }
 
     // Update is called once per frame
@@ -71,5 +80,30 @@ public class PlayerRB : MonoBehaviour
         Quaternion _deltaRotation = Quaternion.Euler(_rotation * Time.fixedDeltaTime);
         _rb.MoveRotation(_rb.rotation * _deltaRotation);
         myCamera.transform.rotation = _rb.rotation * _deltaRotation;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Item"))
+        {
+            for (int i = 0; i < ItemsFind.Length; i++)
+            {
+                if (ItemsFind[i].name == other.gameObject.name && !ItemsFind[i].activeSelf)
+                {
+                    ItemsFind[i].SetActive(true);
+                    counter++;
+                }
+            }
+            Debug.Log("Hit " + other.gameObject.name);
+            Destroy(other.gameObject);
+            if (counter == ItemsFind.Length)
+            {
+                Gate.GetComponent<BoxCollider>().isTrigger = true;
+            }
+        }
+        else if (other.gameObject.CompareTag("Gate"))
+        {
+
+        }
     }
 }
