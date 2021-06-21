@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class PlayerRB : MonoBehaviour
 {
@@ -21,6 +21,7 @@ public class PlayerRB : MonoBehaviour
     private GameObject myMenu;
     private GameObject Gate;
     public GameObject[] ItemsFind;
+    public GameObject LetterUI;
     public bool _isGrounded;
 
     // Start is called before the first frame update
@@ -99,6 +100,9 @@ public class PlayerRB : MonoBehaviour
             if (counter == ItemsFind.Length)
             {
                 Gate.GetComponent<BoxCollider>().isTrigger = true;
+                LetterUI.SetActive(true);
+                LetterUI = GameObject.Find("LetterText");
+                LetterUI.GetComponent<TextMeshProUGUI>().text = "Great you got all your stuff, now off to the gate, to destiny! \n\nPress 'Esc' to close.";
             }
         }
         else if (other.gameObject.CompareTag("Gate"))

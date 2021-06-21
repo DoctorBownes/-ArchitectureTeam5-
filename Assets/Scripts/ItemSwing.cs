@@ -5,8 +5,8 @@ using UnityEngine;
 public class ItemSwing : MonoBehaviour
 {
     public float amp = 0.5f;
-    public float freq = 0.01f;
-    public float roty = 0.3f;
+    public float freq = 0.05f;
+    public float roty = 2f;
     private float timer;
     private float anchorY;
     private float posx;
