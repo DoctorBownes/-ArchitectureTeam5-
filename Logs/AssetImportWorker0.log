@@ -1,0 +1,111 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 16291 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/D34thBoy T3kkai/Documents/GitHub/ArchitectureTeam5
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54202
+Successfully changed project path to: C:/Users/D34thBoy T3kkai/Documents/GitHub/ArchitectureTeam5
+C:/Users/D34thBoy T3kkai/Documents/GitHub/ArchitectureTeam5
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path D:/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/D34thBoy T3kkai/Documents/GitHub/ArchitectureTeam5/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5256
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000956 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 40.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004588 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 40.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2739 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.4 MB.
+System memory in use after: 137.6 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3196.
+Total: 2.078700 ms (FindLiveObjects: 0.242600 ms CreateObjectMapping: 0.117400 ms MarkObjects: 1.698800 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Models
+  artifactKey: Guid(837c31a261f3b8a4ebb003e57337560d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(837c31a261f3b8a4ebb003e57337560d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c30c18a4f21cd8db17f143689910136') in 0.077983 seconds
+  Import took 0.081835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.861686 seconds.
+  path: Assets/Models/Training ground.fbx
+  artifactKey: Guid(520b80452df6bf842b5838d68606d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Training ground.fbx using Guid(520b80452df6bf842b5838d68606d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c700c492e99e2c7438a0647d8ec69f67') in 0.082325 seconds
+  Import took 0.086293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.345438 seconds.
+  path: Assets/Models/Training ground.fbx
+  artifactKey: Guid(520b80452df6bf842b5838d68606d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Training ground.fbx using Guid(520b80452df6bf842b5838d68606d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8cf1901bfb0bd370984ac50a0a23b75') in 0.757289 seconds
+  Import took 0.761886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.444190 seconds.
+  path: Assets/Models/Training ground.fbx
+  artifactKey: Guid(520b80452df6bf842b5838d68606d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Training ground.fbx using Guid(520b80452df6bf842b5838d68606d572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e64786cbde052e94cf26e46b601d29') in 0.303782 seconds
+  Import took 0.308026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.593083 seconds.
+  path: Assets/Models/New Material.mat
+  artifactKey: Guid(59e7b1a6a87809e419f63d1d390d3ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/New Material.mat using Guid(59e7b1a6a87809e419f63d1d390d3ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c0ffa6cd86e8e491a2d53712118a17') in 0.035108 seconds
+  Import took 0.039429 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
