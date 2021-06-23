@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public bool paused;
     public GameObject LetterUI;
+    public GameObject ExitMenu;
     public GameObject UI;
     public GameObject PauseMenu;
     private void Start()
@@ -33,7 +34,7 @@ public class MainMenu : MonoBehaviour
             LetterUI.SetActive(false);
             UI.SetActive(true);
         }
-        else if (SceneManager.GetActiveScene().name == "Game" && Input.GetKeyDown(KeyCode.Escape))
+        else if (!ExitMenu.activeSelf && SceneManager.GetActiveScene().name == "Game" && Input.GetKeyDown(KeyCode.Escape))
         {
             if (paused)
             {

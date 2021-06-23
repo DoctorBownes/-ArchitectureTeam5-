@@ -22,6 +22,7 @@ public class PlayerRB : MonoBehaviour
     private GameObject Gate;
     public GameObject[] ItemsFind;
     public GameObject LetterUI;
+    public GameObject ExitScreen;
     public bool _isGrounded;
 
     // Start is called before the first frame update
@@ -35,10 +36,6 @@ public class PlayerRB : MonoBehaviour
         myCamera = GameObject.Find("MainCamera");
         myMenu = GameObject.Find("Canvas");
         Gate = GameObject.Find("Gate");
-/*        for (int i = 0; i < ItemsFind.Length; i++)
-        {
-            ItemsFind[i] = GameObject.Find("Collected");
-        }*/
     }
 
     // Update is called once per frame
@@ -107,7 +104,8 @@ public class PlayerRB : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Gate"))
         {
-
+            ExitScreen.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
