@@ -3,7 +3,17 @@ guid: 8985c482f0f671d48a76ad0a67d8985e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bark-Texture
+    second: {fileID: 2800000, guid: fe5be5d322d226c4db7434eb8dbfaf13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tree-inside-texture
+    second: {fileID: 2800000, guid: 13dcd60fea019eb40b664943a1697e50, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

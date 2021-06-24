@@ -3,7 +3,22 @@ guid: 004590040c8ea8d4c9394d4eac7ad704
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bark-Texture
+    second: {fileID: 2800000, guid: 719a67dc24f3d62458c9d233ed73b87b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Board-texture
+    second: {fileID: 2800000, guid: f54c92bec8bd65841bf4fe655770b49e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: House Wall Texture Albedo
+    second: {fileID: 2800000, guid: ad901083055f555409683f4eccb65f5a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
