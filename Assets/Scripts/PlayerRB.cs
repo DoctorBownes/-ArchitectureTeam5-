@@ -62,7 +62,6 @@ public class PlayerRB : MonoBehaviour
             _rotation.y = Mathf.Clamp(_rotation.y, -90f, 90f);
             myCamera.transform.localRotation = Quaternion.Euler(_rotation.y, 0f, 0f);
             transform.localRotation = Quaternion.Euler(0f, _rotation.x, 0f);
-
             //Jump
             if (Input.GetButtonDown("Jump") && _isGrounded)
             {
@@ -73,8 +72,8 @@ public class PlayerRB : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.MovePosition(_rb.position + (WalkSpeed * Time.fixedDeltaTime * _movement));
-
+        //_rb.MovePosition(_rb.position + (WalkSpeed * Time.fixedDeltaTime * _movement));
+        _rb.AddForce(_movement * Time.fixedDeltaTime * WalkSpeed * 1000);
         Quaternion _deltaRotation = Quaternion.Euler(_rotation * Time.fixedDeltaTime);
         _rb.MoveRotation(_rb.rotation * _deltaRotation);
         myCamera.transform.rotation = _rb.rotation * _deltaRotation;
