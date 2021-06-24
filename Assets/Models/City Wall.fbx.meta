@@ -3,7 +3,12 @@ guid: f62db96f5f54a504f8359977e7ef4395
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CittyWAll-Texture
+    second: {fileID: 2800000, guid: 64c9ab9106bf7054fad852a4b668cce0, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
