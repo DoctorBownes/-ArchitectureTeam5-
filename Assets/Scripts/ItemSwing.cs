@@ -25,8 +25,8 @@ public class ItemSwing : MonoBehaviour
     void Update()
     {
         timer++;
-        posy = anchorY + (Mathf.Sin(freq * timer) * amp);
-        transform.position = new Vector3(posx, posy * Time.deltaTime, posz);
+       // posy = anchorY + (Mathf.Sin(freq * timer) * amp);
+       // transform.position = new Vector3(posx, posy * Time.deltaTime, posz);
         transform.Rotate(0f, roty * Time.deltaTime, 0f);
     }
 }
