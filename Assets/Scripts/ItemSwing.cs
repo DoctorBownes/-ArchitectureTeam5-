@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ItemSwing : MonoBehaviour
 {
-    public float amp = 0.5f;
-    public float freq = 0.05f;
-    public float roty = 2f;
+    public float amp = 200f;
+    public float freq = 0.005f;
+    public float roty = 20f;
     private float timer;
     private float anchorY;
     private float posx;
@@ -26,7 +26,7 @@ public class ItemSwing : MonoBehaviour
     {
         timer++;
         posy = anchorY + (Mathf.Sin(freq * timer) * amp);
-        transform.position = new Vector3(posx, posy, posz);
-        transform.Rotate(0f, roty, 0f);
+        transform.position = new Vector3(posx, posy * Time.deltaTime, posz);
+        transform.Rotate(0f, roty * Time.deltaTime, 0f);
     }
 }
