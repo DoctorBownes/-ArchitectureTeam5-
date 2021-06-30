@@ -17853,7 +17853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1410086130}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -90, y: -14.4, z: -1.37}
 --- !u!199 &831355905
 ParticleSystemRenderer:
@@ -33000,6 +33000,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 543450652571510363}
+  - {fileID: 1627527063}
   - {fileID: 1641141697}
   - {fileID: 205295320}
   - {fileID: 5473454}
@@ -33011,9 +33012,8 @@ Transform:
   - {fileID: 1182280314}
   - {fileID: 299381490}
   - {fileID: 1785460040}
-  - {fileID: 1627527063}
-  - {fileID: 1907998418}
   - {fileID: 831355904}
+  - {fileID: 1907998418}
   m_Father: {fileID: 507985320812355992}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35572,7 +35572,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1410086130}
-  m_RootOrder: 12
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: -14.4, z: -1.37}
 --- !u!199 &1627527064
 ParticleSystemRenderer:
@@ -51439,7 +51439,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -51513,8 +51513,8 @@ RectTransform:
   m_Father: {fileID: 5868026163708742227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -51762,6 +51762,7 @@ MonoBehaviour:
   ExitMenu: {fileID: 802719315}
   UI: {fileID: 5868026164046746679}
   PauseMenu: {fileID: 5868026164450571231}
+  audioMixer: {fileID: 24100000, guid: 4cb7fe5720f88c245b00a8502bf1f705, type: 2}
 --- !u!1 &5868026163155084147
 GameObject:
   m_ObjectHideFlags: 0
@@ -52324,13 +52325,13 @@ MonoBehaviour:
   m_MinValue: -80
   m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: -40
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5868026163155084147}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 5868026163155084146}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

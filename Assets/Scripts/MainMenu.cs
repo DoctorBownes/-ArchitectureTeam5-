@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
@@ -10,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public GameObject ExitMenu;
     public GameObject UI;
     public GameObject PauseMenu;
+    public AudioMixer audioMixer;
     private void Start()
     {
         Time.timeScale = 1f;
@@ -45,6 +47,11 @@ public class MainMenu : MonoBehaviour
                 Pause();
             }
         }
+    }
+
+    public void SetVolume(float volume)
+    {
+        audioMixer.SetFloat("volume", volume);
     }
     public void Resume()
     {
